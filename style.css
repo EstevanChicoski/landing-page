@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Righteous&display=swap');
+
+.container-principal{
+    width: 100%;
+    height: 75vh;
+    background-color: rgb(141, 141, 155);
+    display: flex;
+    margin-top: 56px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-principal-item1{
+    display: flex;
+    flex-direction: column;
+    padding-right: 300px;
+    gap: 10px;
+}
+
+.container-principal-item1-texto{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container-principal-item1-titulo{
+    font-family: 'Righteous', cursive;
+    font-size: 40pt;
+}
+
+.container-secundario{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#ass{
+    border-top: 5px solid rgb(45, 45, 199);
+    border-radius: 5px;
+}
+
+.card-text{
+    font-size: 30pt;
+    color: rgb(25, 25, 102);
+    font-family: 'Righteous', cursive;
+}
+
+#card-banco{
+    color: red;
+}
+
+
+
+.container-terciario{
+    width: 100%;
+    height: 40vh;
+}
+
+@media (max-width: 1325px){
+
+    .container-principal{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-principal-item1{
+        margin-left: 20%;
+        padding-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 950px){
+
+    .container-secundario{
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+}

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@300&family=Righteous&display=swap');
 
 .container-principal{
     width: 100%;
@@ -14,8 +13,17 @@
 .container-principal-item1{
     display: flex;
     flex-direction: column;
-    padding-right: 300px;
-    gap: 10px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container-principal-item2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-principal-item1-texto{
@@ -35,6 +43,7 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
+    background-color: whitesmoke;
 }
 
 #ass{
@@ -56,15 +65,24 @@
 
 .container-terciario{
     width: 100%;
-    height: 40vh;
+    height: 50vh;
+    background-color: rgb(141, 141, 155);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-terciario-item1{
+    width: 40%;
 }
 
 @media (max-width: 1325px){
 
     .container-principal{
-        height: 100vh;
+        height: 120vh;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding-top: 100px;
         align-items: center;
         justify-content: center;
@@ -73,6 +91,8 @@
     .container-principal-item1{
         margin-left: 20%;
         padding-bottom: 30px;
+        text-align: center;
+        padding-left: 10vw;
     }
 
 }
@@ -86,4 +106,80 @@
         gap: 40px;
     }
 
+    .container-terciario{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .container-terciario-item1{
+        width: 80%;
+    }
+
 }
+
+@media (max-width: 921px){
+
+    .container-principal{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-principal-item1{
+        width: 100%;
+    }
+
+    .container-principal-item1 h1{
+        font-size: 35pt;
+    }
+
+    .container-principal-item2 img{
+        width: 400px;
+    }
+
+}
+
+#class{
+    height: 36vh;
+}
+
+.container-quartenario{
+    width: 100%;
+    height: 70vh;
+    background-color: whitesmoke;
+}
+
+.container-quartenario-title{
+    font-family: 'Fredoka One', cursive;    
+    border-top: 1px solid rgba(48, 46, 46, 0.151);
+    text-align: center;padding-top: 20px;
+}
+
+.container-quartenario-itens{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.container-quartenario-itens-linha1, .container-quartenario-itens-linha2{
+    display: flex;
+    gap: 10vw;
+}
+
+.container-quartenario-itens-linha1-texto{
+    width: 15vw;
+}
+
+.material-symbols-outlined {
+    color: green;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 800,
+    'GRAD' 0,
+    'opsz' 48
+  }
